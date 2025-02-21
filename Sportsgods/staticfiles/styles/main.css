@@ -1,0 +1,375 @@
+.best-sellers-heading {
+    font-size: 6rem; /* Increase font size */
+    text-align: center; /* Ensure it's centered */
+    font-family: 'Sansita', sans-serif; /* Keep the Sansita font */
+    font-weight: bold; /* Make it bold */
+    margin-bottom: 2rem; /* Add spacing below */
+}
+
+.new-product-column {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1rem;
+    padding: 0 2rem;
+}
+
+.navbar-div {
+    background-color: rgb(23, 23, 23);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 4rem;
+    justify-content: space-between;
+    color: white;
+}
+
+.navbar-two {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding-bottom: 1rem;
+}
+
+.navbar-two-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 4.5rem;
+    width: 100%;
+}
+
+.navbar-category-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 24rem 0 19rem;
+}
+
+.navbar-category {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(43, 42, 42);
+    width: 9rem;
+    height: 2.5rem;
+    border-radius: 2rem;
+    border: 2px solid rgb(87, 85, 85);
+}
+
+.navbar-category:hover {
+    background-color: rgb(87, 85, 85);
+    transition: 0.4s;
+    text-decoration: none;
+}
+
+.navbar-category:active {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+
+
+.navbar-div-left,
+.navbar-div-right,
+.navbar-two-side-container {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    margin: 0 1rem 0 1rem;
+    font-size: 0.9rem;
+    justify-content: space-between;
+    width: 10rem;
+    align-items: center;
+}
+
+.searchbar {
+    background-color: black;
+    color: white;
+    width: 30rem;
+    height: 2.5rem;
+    border: 1px solid white;
+    border-radius: 1.3rem;
+    padding: 0 1rem 0 1rem;
+}
+
+.searchbar::placeholder {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.search-div {
+    display: flex;
+    position: relative;
+}
+
+.search-div img {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+}
+
+.navbar-div-left {
+    align-items: center;
+    padding: 0 0 0 1.8rem;
+}
+
+.navbar-div-right p {
+    display: flex;
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+.navbar-div-left p,
+.navbar-two-right-container p {
+    font-size: 1rem;
+    display: flex;
+    margin: 0.5rem 0 0.5rem 0;
+    font-weight: 500;
+}
+
+.card {
+    width: 25rem; /* Default fixed width for larger screens */
+    height: 20rem; /* Default fixed height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid black;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-size: 1.7rem;
+    font-weight: normal;
+    color: white;
+    margin: 3px 4px;
+}
+
+/* Media Query for Tablets (768px - 1024px) */
+@media (min-width: 768px) (max-width: 1024px) {
+    .card {
+        width: 20rem; /* Adjust width for tablets */
+        height: 18rem; /* Slightly reduce height */
+    }
+
+    .card-title {
+        font-size: 1.5rem; /* Reduce title font size for smaller screens */
+    }
+}
+
+/* Media Query for Smartphones (480px - 767px) */
+@media screen and (max-width: 767px) {
+    .row.justify-content-around {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+    }
+
+    .card {
+        width: 15rem; /* Narrower cards for smartphones */
+        height: 16rem; /* Reduce height further */
+    }
+
+    .card-title {
+        font-size: 1.3rem; /* Further reduce font size */
+    }
+}
+
+/* Media Query for Extra Small Screens (less than 480px) */
+@media only screen and (max-width: 480px) {
+    .row.justify-content-around {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+    }
+
+    .card {
+        width: 8rem; /* Full width for very small screens */
+        height: 15rem; /* Let the content dictate the height */
+        flex-direction: column;
+    }
+
+    .card-title {
+        font-size: 1.2rem; /* Smallest font size */
+        text-align: center; /* Center the title for smaller screens */
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .row.justify-content-around {
+        grid-template-columns: repeat(2, 1fr) !important;
+        justify-content: center;
+    }
+
+    .card {
+        width: 100%; /* Let the card take full width of its container */
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .card-title {
+        font-size: 1rem; /* Adjust to a smaller size for tiny screens */
+        text-align: center; /* Center the title */
+    }
+
+
+}
+
+
+.card-img-top {
+    width: 100%; /* Make image span the full width of the card */
+    height: 50%; /* Fixed height for uniformity */
+    object-fit: contain; /* Ensures no stretching */
+    border-top-left-radius: 10px; /* Matches card's rounded corners */
+    border-top-right-radius: 10px;
+}
+
+.card-text {
+    color: white;
+}
+
+.navbar-div-right .navbar-one-icon,
+.navbar-two-right-container img {
+    width: 1.5rem;
+    display: flex;
+    margin: auto;
+}
+
+
+.navbar-div-left .navbar-one-icon {
+    width: 1.4rem;
+    display: flex;
+    margin: auto;
+}
+
+.navbar-one-line {
+    height: 2rem;
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+.main-image-holder img {
+    width: 100%;
+}
+
+
+.website-footer {
+    background-color: black;
+    height: 30rem;
+    width: 100%;
+}
+
+.footer-icons-container {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    width: 30%
+}
+
+.contact-us {
+    display: flex;
+    color: white;
+    margin: 3rem 0 1rem 0;
+    font-size: 1.8rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.footer-icon-container img {
+    width: 3rem;
+}
+
+.navbar-div-two {
+    width: 100%;
+}
+
+.email-signup-container {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.signup-heading {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-family: Arial, sans-serif;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    padding: 0.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-icon img {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5rem;
+}
+
+.email-input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: transparent;
+    color: black;
+}
+
+.email-input::placeholder {
+    color: #808080;
+}
+
+.row.justify-content-around {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr !important;
+    row-gap: 1rem;
+    column-gap: 1rem;
+    justify-self: center !important; /* Center the grid items horizontally */
+    align-content: center !important; /* Center the grid items vertically */
+}
+
+.col-lg-3,
+.col-md-4,
+.col-sm-6 {
+    display: flex;
+    flex-direction: column; /* Ensures content inside each column is stacked */
+}
+
+.main-description-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.description-image {
+    width: 30rem;
+}
+
+.description-container {
+    width: 50rem;
+}
+
+
+.description-image-container {
+
+}
+.price-name-card {
+    font-size: 1.2rem;
+}
+
+
+

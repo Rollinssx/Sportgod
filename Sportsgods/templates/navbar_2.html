@@ -1,0 +1,53 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'styles/main.css' %}">
+<body>
+    {% include 'navbar_1.html' %}
+    <div class="navbar-two">
+        <div class="navbar-two-container">
+            <div class="logo-div">
+                <img src="{% static 'images/SG_logo_for_Sports_Gods_Sporting_Goods_Store-removebg-preview 1.png' %}">
+            </div>
+            <div class="search-div">
+                <input class="searchbar" placeholder="Search all products">
+                <a href="#">
+                    <img src="{% static 'images/search.png' %}">
+                </a>
+            </div>
+            <div class="navbar-two-side-container">
+                <div class="navbar-two-right-container">
+                    <img src="{% static 'images/Shopping cart.png' %}">
+                    <p>My cart</p>
+                </div>
+                <div class="navbar-two-right-container">
+                    <img src="{% static 'images/Coins Stack.png' %}">
+                    <p>Earn points</p>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-category-container">
+                <a href="#">
+                    <div class="navbar-category">
+                        <p>Men</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="navbar-category">
+                        <p>Women</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="navbar-category">
+                        <p>Basketball</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="navbar-category">
+                        <p>Skiing</p>
+                    </div>
+                </a>
+        </div>
+    </div>
+    {% block content %}
+    {% endblock content %}
+</body>
+

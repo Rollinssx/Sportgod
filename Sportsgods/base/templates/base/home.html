@@ -1,0 +1,718 @@
+{% extends 'main.html' %}
+{% block content %}
+{% load static %}
+    <div class="search_area">
+        <div class="search_close">
+            <span><i class="fal fa-times"></i></span>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12">
+                    <div class="search-wrapper text-center">
+                        <h2>search</h2>
+                        <div class="search-filtering pt-30">
+                            <div class="search_tab">
+                                <ul class="nav nav-tabs justify-content-center mb-55" id="myTab2" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="home-tab2" data-bs-toggle="tab" data-bs-target="#homee" type="button" role="tab" aria-selected="true">All categories</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="profile-tab2" data-bs-toggle="tab" data-bs-target="#profile2" type="button" role="tab" aria-selected="false">Basketball</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#contact2" type="button" role="tab" aria-selected="false">Handbag</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="sportswear-tab" data-bs-toggle="tab" data-bs-target="#sportswear11" type="button" role="tab" aria-selected="false">Sportswear</button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent2">
+                                    <div class="tab-pane fade show active" id="homee" role="tabpanel">
+
+                                    </div>
+                                    <div class="tab-pane fade" id="profile2" role="tabpanel">
+
+                                    </div>
+                                    <div class="tab-pane fade" id="contact2" role="tabpanel">
+
+                                    </div>
+                                    <div class="tab-pane fade" id="sportswear11" role="tabpanel">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main_search">
+                            <form action="#">
+                                <input type="text" name="search" placeholder="search products">
+                                <button class="m-search"><i class="fal fa-search d-sm-none d-md-block"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fix">
+        <div class="side-info">
+            <button class="side-info-close"><i class="fal fa-times"></i></button>
+            <div class="side-info-content">
+                <div class="mobile-menu mean-container">
+                    <div class="mean-bar"><a href="#nav" class="meanmenu-reveal" style="right: 0px; left: auto; display: inline;">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+                    <nav class="mean-nav">
+                    <ul style="display: none;">
+                        <li class="menu-item-has-children"><a href="#">Home </a>
+                            <ul class="sub-menu" style="display: none;">
+                                <li><a href="#">home shop 1</a></li>
+                                <li><a href="#">home shop 2</a></li>
+                                <li><a href="#">home shop 3</a></li>
+                                <li><a href="#">home shop 4</a></li>
+                            </ul>
+                            <a class="mean-expand" href="#" style="font-size: 18px">+</a></li>
+                            <li class="position-static menu-item-has-children"><a href="#">Shop</a>
+                                <ul class="mega_menu" data-background="{% get_media_prefix %}img/mega-menu/product.jpg" style="background-image: url(&quot;{% get_media_prefix %}img/mega-menu/product.jpg&quot;); display: none;">
+                                    <li>
+                                        <h4 class="mega_title">Shop Layout</h4>
+                                        <ul class="mega_item" style="display: none;">
+                                            <li><a href="shop.html">Pagination</a></li>
+                                            <li><a href="shop.html">Ajax Load More</a></li>
+                                            <li><a href="shop-3-width.html">Infinite Scroll</a></li>
+                                            <li><a href="shop-right.html">Sidebar Right</a></li>
+                                            <li><a href="shop.html">Sidebar Left</a></li>
+                                        </ul>
+                                            <a class="mean-expand" href="#" style="font-size: 18px">+</a>
+                                    </li>
+                                            <li>
+                                                <h4 class="mega_title">shop pages</h4>
+                                                <ul class="mega_item" style="display: none;">
+                                                    <li><a href="shop-list.html">List View</a></li>
+                                                    <li><a href="shop-sm.html">Small Products</a></li>
+                                                    <li><a href="shop-large.html">Large Products</a></li>
+                                                    <li><a href="shop-3-width.html">Shop — 3 Items</a></li>
+                                                    <li><a href="shop-4.html">Shop — 4 Items</a></li>
+                                                    <li><a href="shop-sm.html">Shop — 5 Items</a></li>
+                                                </ul>
+                                            <a class="mean-expand" href="#" style="font-size: 18px">+</a></li>
+                                            <li>
+                                                <h4 class="mega_title">Product Layout</h4>
+                                                <ul class="mega_item" style="display: none;">
+                                                    <li><a href="shop-sticky.html">Description Sticky</a></li>
+                                                    <li><a href="shop-carousel.html">Product Carousel</a></li>
+                                                    <li><a href="modern.html"> Gallery Modern</a></li>
+                                                    <li><a href="single.html"> Thumbnail Left</a></li>
+                                                    <li><a href="single-right.html">Thumbnail Right</a></li>
+                                                    <li><a href="single-bottom.html"> Thumbnail Botttom</a></li>
+                                                </ul>
+                                            <a class="mean-expand" href="#" style="font-size: 18px">+</a></li>
+                                            <li>
+
+                                            </li>
+                                        </ul>
+                                    <a class="mean-expand" href="#" style="font-size: 18px">+</a></li>
+                                    <li class="position-static menu-item-has-children"><a href="#">Features</a>
+                                        <ul class="mega_menu_2" style="display: none;">
+                                            <li data-background="{% get_media_prefix %}img/mega-menu/product2.jpg" style="background-image: url(&quot;{% get_media_prefix %}img/mega-menu/product2.jpg&quot;);">
+                                                <h4 class="mega_title_2">Basketball</h4>
+                                                <ul class="mega_item_2" style="display: none;">
+                                                    <li><a href="shop.html">East Hampton Fleece</a></li>
+                                                    <li><a href="shop.html">Faxon Canvas Low</a></li>
+                                                    <li><a href="shop.html">Habitasse dictumst</a></li>
+                                                    <li><a href="shop.html">Kaoreet lobortis</a></li>
+                                                    <li><a href="shop.html">NikeCourt Zoom Prestige</a></li>
+                                                    <li><a href="shop.html">NikeCourts Air Zoom</a></li>
+                                                    <li><a href="shop.html">NikeCourts Air Zoom</a></li>
+                                                </ul>
+                                            <a class="mean-expand" href="#" style="font-size: 18px">+</a></li>
+                                            <li data-background="{% get_media_prefix %}img/mega-menu/product3.jpg" style="background-image: url(&quot;{% get_media_prefix %}img/mega-menu/product3.jpg&quot;);">
+                                                <h4 class="mega_title_2">Helmet for Women’s</h4>
+                                                <ul class="mega_item_2" style="display: none;">
+                                                    <li><a href="shop.html">Arsenal Home Jersey</a></li>
+                                                    <li><a href="shop.html">Arsenal Home Jersey</a></li>
+                                                    <li><a href="shop.html">Pellentesque posuere</a></li>
+                                                    <li><a href="shop.html">Running 3-Stripes</a></li>
+                                                    <li><a href="shop.html">Running 3-Stripes</a></li>
+                                                    <li><a href="shop.html">V-Neck T-Shirt</a></li>
+                                                    <li><a href="shop.html">WordPress Pennant</a></li>
+                                                </ul>
+                                            <a class="mean-expand" href="#" style="font-size: 18px">+</a></li>
+                                            <li data-background="{% get_media_prefix %}img/mega-menu/product4.jpg" style="background-image: url(&quot;{% get_media_prefix %}img/mega-menu/product4.jpg&quot;);">
+                                                <h4 class="mega_title_2">Basketball</h4>
+                                                <ul class="mega_item_2" style="display: none;">
+                                                    <li><a href="shop.html">East Hampton Fleece</a></li>
+                                                    <li><a href="shop.html">Faxon Canvas Low</a></li>
+                                                    <li><a href="shop.html">Habitasse dictumst</a></li>
+                                                    <li><a href="shop.html">Kaoreet lobortis</a></li>
+                                                    <li><a href="shop.html">NikeCourt Zoom Prestige</a></li>
+                                                    <li><a href="shop.html">NikeCourts Air Zoom</a></li>
+                                                    <li><a href="shop.html">NikeCourts Air Zoom</a></li>
+                                                </ul>
+                                            <a class="mean-expand" href="#" style="font-size: 18px">+</a></li>
+                                        </ul>
+                                    <a class="mean-expand" href="#" style="font-size: 18px">+</a></li>
+                                    <li><a class="d-none d-xl-block" href="index.html">
+                                            <img class="pl-50 pr-50" src="{% get_media_prefix %}img/logo/logo-1.png" alt="">
+                                        </a></li>
+                                        <li class="menu-item-has-children"><a href="#">Blog</a>
+                                            <ul class="sub-menu" style="display: none;">
+                                                <li><a href="#">Blog Grid</a></li>
+                                                <li><a href="#">Blog large</a></li>
+                                                <li><a href="#">Blog left</a></li>
+                                                <li><a href="#">Blog Right</a></li>
+                                                <li><a href="#">Blog no sidebar</a></li>
+                                            </ul>
+                                        <a class="mean-expand" href="#" style="font-size: 18px">+</a></li>
+                                    <li class="menu-item-has-children"><a href="#">pages</a>
+                                        <ul class="sub-menu" style="display: none;">
+                                                       <li><a href="#">about us</a></li>
+                                            <li><a href="#">about us 2</a></li>
+                                            <li><a href="#">contact</a></li>
+                                            <li><a href="#">contact 2</a></li>
+                                            <li><a href="#">single page</a></li>
+                                            <li><a href="#">cart page</a></li>
+                                            <li><a href="#">checkout page</a></li>
+                                            <li><a href="#">page 404</a></li>
+                                            <li><a href="#">services</a></li>
+                                            <li><a href="#">frequently questions</a></li>
+                                        </ul>
+                                    <a class="mean-expand" href="#" style="font-size: 18px">+</a></li>
+                                    <li><a href="#">Portfolio</a></li>
+                                    <li class="mean-last"><a href="#">contact us </a></li>
+                                </ul>
+                            </nav>
+                    </div>
+                </div>
+                <div class="contact-infos mb-30">
+                    <div class="contact-list mb-30">
+                        <h4>Office Address</h4>
+                        <p>123/A, Miranda City Likaoli
+                            Prikano, Dope</p>
+                    </div>
+                    <div class="contact-list mb-30">
+                        <h4>Phone Number</h4>
+                        <p>+0989 7876 9865 9</p>
+                        <p>+(090) 8765 86543 85</p>
+                    </div>
+                    <div class="contact-list mb-30">
+                        <h4>Email Address</h4>
+                        <p>info@example.com</p>
+                        <p>example.mail@hum.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas-overlay overlay-open"></div>
+
+
+    <!-- cart area start  -->
+    <div class="cart__sidebar">
+    <div class="container">
+        <div class="cart__content">
+            <div class="cart-text">
+                <h3 class="mb-40">Shopping cart</h3>
+                <div class="add_cart_product">
+                    <div class="add_cart_product__thumb">
+                        <img src="{% get_media_prefix %}img/product/29-3-1.jpg" alt="">
+                    </div>
+                    <div class="add_cart_product__content">
+                        <h5><a href="shop-1.html">Running 3-Stripes</a></h5>
+                        <p>1 × $66.00</p>
+                        <button class="cart_close"><i class="fal fa-times"></i></button>
+                    </div>
+                </div>
+                <div class="add_cart_product">
+                    <div class="add_cart_product__thumb">
+                        <img src="{% get_media_prefix %}img/product/17-4.jpg" alt="">
+                    </div>
+                    <div class="add_cart_product__content">
+                        <h5><a href="shop-1.html">Buddy non Stripes</a></h5>
+                        <p>1 × $40.00</p>
+                        <button class="cart_close"><i class="fal fa-times"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-icon">
+                <i class="fal fa-times"></i>
+            </div>
+            <div class="cart-bottom">
+                <div class="cart-bottom__text">
+                    <span>Subtotal:</span>
+                    <span class="end">$121.00</span>
+                    <a href="cart-1.html">view cart</a>
+                    <a href="checkout-1.html">checkout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="cart-offcanvas-overlay"></div>
+    <!-- cart area end  -->
+
+    <!-- breadcrumb area start -->
+    <div class="page-layout" data-background="{% get_media_prefix %}images/Website Head Concept.png">
+        <div class="container"></div>
+    </div>
+    <!-- breadcrumb area end -->
+
+    <!-- shop page start -->
+    <div class="shop-page pt-85">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                    <div class="shop-top-bar position-relative">
+                        <div class="showing-result">
+                            <p> Showing all {{ product_count }} results</p>
+                        </div>
+                        <div class="shop-tab">
+                            <nav>
+                                <div class="nav nav-tabs shop-tabs" id="nav-tab" role="tablist">
+                                    <button>
+                                        <span>views</span>
+                                    </button>
+                                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+                                        <img src="{% get_media_prefix %}img/essential/i2-1.svg" alt="">
+                                    </button>
+                                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+                                        <img src="{% get_media_prefix %}img/essential/i3-1.svg" alt="">
+                                    </button>
+                                    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+                                        <img src="{% get_media_prefix %}img/essential/i4-1.svg" alt="">
+                                    </button>
+                                    <button class="nav-link" id="nav-contact-tab1" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+                                        <img src="{% get_media_prefix %}img/essential/i5.svg" alt="">
+                                    </button>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="shop-filtaring">
+                            <div class="filter-select">
+                                <select class="order-by">
+                                    <option value="Default setting">Default setting</option>
+                                    <option value="Default setting">short by popularity</option>
+                                    <option value="Default setting">short by average rating</option>
+                                    <option value="Default setting">short by latest</option>
+                                    <option value="Default setting">short by price : low to high</option>
+                                    <option value="Default setting">Default setting</option>
+                                </select>
+                                    <button class="open-filter"><i class="fal fa-plus"></i>filter</button>
+                                    <div class="filter-content">
+                                        <div class="row">
+                                            <div class="col-xl-3 col-lg-3">
+                                                <div class="product-widget pt-50">
+                                                    <h3 class="widget-title mb-30">color</h3>
+                                                    <div class="colors-layer">
+                                                        <a href="#"><span class="blue"></span></a>
+                                                        <a href="#"><span class="gray"></span></a>
+                                                        <a href="#"><span class="skyblue"></span></a>
+                                                        <a href="#"><span class="red"></span></a>
+                                                        <a href="#"><span class="yellow"></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-3">
+                                                <div class="product-widget pt-50">
+                                                    <h3 class="widget-title mb-30">Size</h3>
+                                                    <div class="layer-size">
+                                                        <span>3XL</span>
+                                                        <span>L</span>
+                                                        <span>M</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-3">
+                                                <div class="product-widget pt-50">
+                                                    <h3 class="widget-title mb-30">Filter By Price</h3>
+                                                    <form action="#">
+                                                        <div class="price-filter">
+                                                            <div id="slider-range-2" class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
+                                                                <div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 15%; width: 46.4%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 7.2%;"></span><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 48.8%;"></span>
+                                                                <div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 15%; width: 45%;"></div>
+                                                            <div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 7.2%; width: 41.6%;"></div></div>
+                                                            <div class="filter-form-submit mt-35">
+                                                                <button type="submit">Filter</button>
+                                                                <div class="filter-price d-inline-block pl-20">Price: <input type="button" id="amount-2" value="$36 - $244"></div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-3">
+                                                <div class="product-widget pt-50">
+                                                    <h3 class="widget-title mb-30">Product tags</h3>
+                                                    <div class="tags mb-50">
+                                                        <a href="#">Basketball</a>
+                                                        <a href="#">Handbag</a>
+                                                        <a href="#">Jackets</a>
+                                                        <a href="#">Kids & Young</a>
+                                                        <a href="#">Training Wear</a>
+                                                        <a href="#">Women’s</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop-page-product pt-50 pb-100">
+                        <div class="row">
+                            <div class="col-xl-12 col-lg-12 col-md-12">
+                                <div class="tab-content" id="nav-tabContent">
+                                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                        <div class="row">
+                                            {% for product in products %}
+                                            <div class="col-xl-6">
+                                                <div class="product product-4">
+                                                    <div class="product__thumb">
+                                                        <a href="{% url 'product' pk=product.pk %}">
+                                                            <img class="product-primary" src="{{ product.image.url }}" alt="product_image">
+                                                                {% if product.image_2 %}
+                                                                    <img class="product-secondary" src="{{ product.image_2.url }}" alt="product_image">
+                                                                {% else %}
+                                                                    <p>No secondary image available</p>
+                                                                {% endif %}
+                                                        </a>
+                                                        <div class="product__update">
+                                                            <a class="#">sale</a>
+                                                        </div>
+                                                        <div class="product-info mb-10">
+                                                            <div class="product_category">
+                                                                <span>{{ product.category }}</span>
+                                                            </div>
+                                                            <div class="product_rating">
+                                                                <a href="#"><i class="fal fa-star start-color"></i></a>
+                                                                <a href="#"><i class="fal fa-star start-color"></i></a>
+                                                                <a href="#"><i class="fal fa-star start-color"></i></a>
+                                                                <a href="#"><i class="fal fa-star"></i></a>
+                                                                <a href="#"><i class="fal fa-star"></i></a>
+                                                            </div>
+                                                        </div>
+                                                            <div class="product__name">
+                                                            <h4><a href="single-1.html">{{ product.name }} </a></h4>
+                                                                <div class="pro-price">
+                                                                    <p class="p-absoulute pr-1"><span>$</span>{{ product.price }} - <span>$</span>{{ product.price }}</p>
+                                                                    <a class="p-absoulute pr-2" href="#">add to cart</a>
+                                                                </div>
+                                                    <div class="product__action">
+                                                    <div class="inner__action">
+                                                        <div class="wishlist">
+                                                            <a href="#"><i class="fal fa-heart"></i></a>
+                                                        </div>
+                                                        <div class="view">
+                                                            <a href="javascript:void(0)"><i class="fal fa-eye"></i></a>
+                                                        </div>
+                                                        <div class="layer">
+                                                            <a href="#"><i class="fal fa-layer-group"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                            {% endfor %}
+                                    </div>
+                            </div>
+                                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                        <div class="row">
+                                            {% for product in products %}
+                                                <div class="col-xl-4">
+                                                    <div class="product product-4">
+                                                        <div class="product__thumb">
+                                                            <a href="{% url 'product' pk=product.pk %}">
+                                                                <img class="product-primary" src="{{ product.image.url }}" alt="product_image">
+                                                                    {% if product.image_2 %}
+                                                                        <img class="product-secondary" src="{{ product.image_2.url }}" alt="product_image">
+                                                                    {% else %}
+                                                                        <p>No secondary image available</p>
+                                                                    {% endif %}
+                                                            </a>
+                                                            <!-- <div class="product__update">
+                                                                <a class="#">new</a>
+                                                            </div> -->
+                                                            <div class="product-info mb-10">
+                                                                <div class="product_category">
+                                                                    <span>{{ product.category }}</span>
+                                                                </div>
+                                                                <div class="product_rating">
+                                                                    <a href="#"><i class="fal fa-star start-color"></i></a>
+                                                                    <a href="#"><i class="fal fa-star start-color"></i></a>
+                                                                    <a href="#"><i class="fal fa-star start-color"></i></a>
+                                                                    <a href="#"><i class="fal fa-star"></i></a>
+                                                                    <a href="#"><i class="fal fa-star"></i></a>
+                                                                </div>
+                                                            </div>
+                                                                <div class="product__name">
+                                                                <h4><a href="single.html">{{ product.name }}</a></h4>
+                                                                <div class="pro-price">
+                                                                    <p class="p-absoulute pr-1"><span>$</span>{{ product.price }} <span>$</span>{{ product.price }}</p>
+                                                                    <a class="p-absoulute pr-2" href="#">add to cart</a>
+                                                                </div>
+                                                            </div>
+                                                        <div class="product__action">
+                                                        <div class="inner__action">
+                                                            <div class="wishlist">
+                                                                <a href="#"><i class="fal fa-heart"></i></a>
+                                                            </div>
+                                                            <div class="view">
+                                                                <a href="javascript:void(0)"><i class="fal fa-eye"></i></a>
+                                                            </div>
+                                                            <div class="layer">
+                                                                <a href="#"><i
+                                                                        class="fal fa-layer-group"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                        <div class="row">
+                                            {% for product in products %}
+                                            <div class="col-xl-3">
+                                                <div class="product product-3">
+                                                    <div class="product__thumb">
+                                                        <a href="{% url 'product' pk=product.pk %}">
+                                                                <img class="product-primary" src="{{ product.image.url }}" alt="product_image">
+                                                                    {% if product.image_2 %}
+                                                                        <img class="product-secondary" src="{{ product.image_2.url }}" alt="product_image">
+                                                                    {% else %}
+                                                                        <p>No secondary image available</p>
+                                                                    {% endif %}
+                                                            </a>
+                                                        <!-- <div class="product__update">
+                                                            <a class="#">new</a>
+                                                        </div> -->
+                                                        <div class="product-info mb-10">
+                                                            <div class="product_category">
+                                                                <span>{{ product.category }}</span>
+                                                            </div>
+                                                            <div class="product_rating">
+                                                                <a href="#"><i class="fal fa-star start-color"></i></a>
+                                                                <a href="#"><i class="fal fa-star start-color"></i></a>
+                                                                <a href="#"><i class="fal fa-star start-color"></i></a>
+                                                                <a href="#"><i class="fal fa-star"></i></a>
+                                                                <a href="#"><i class="fal fa-star"></i></a>
+                                                            </div>
+                                                        </div>
+                                                            <div class="product__name">
+                                                            <h4><a href="single.html">{{ product.name }}</a></h4>
+                                                            <div class="pro-price">
+                                                                <p class="p-absoulute pr-1"><span>$</span>{{ product.price }} - <span>$</span>{{ product.price }}</p>
+                                                                <a class="p-absoulute pr-2" href="#">add to cart</a>
+                                                            </div>
+                                                        </div>
+                                                    <div class="product__action">
+                                                    <div class="inner__action">
+                                                        <div class="wishlist">
+                                                            <a href="#"><i class="fal fa-heart"></i></a>
+                                                        </div>
+                                                        <div class="view">
+                                                            <a href="javascript:void(0)"><i class="fal fa-eye"></i></a>
+                                                        </div>
+                                                        <div class="layer">
+                                                            <a href="#"><i
+                                                                    class="fal fa-layer-group"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="newsletter-overlay" id="newsletterPopup">
+    <div class="newsletter" style="background: url('{% get_media_prefix %}img/gallary/pexels-giovanni-calia-1140926-2264226.jpg') no-repeat center center;
+        background-size: cover;">
+        <button class="close-btn" onclick="closePopup()">✖</button>
+        <div class="section-title">
+            <h2>Get 10% Off</h2>
+            <p>Sign up to get exclusive updates on new drops, discounts or flash sales</p>
+        </div>
+        <div class="newsletter-form">
+            <input type="email" placeholder="Enter your email">
+            <button class="">Yes, Give me my discount</button>
+        </div>
+    </div>
+</div>
+    <!-- shop page end -->
+
+    <!-- search area  -->
+    <div class="search_area">
+        <div class="search_close">
+            <span><i class="fal fa-times"></i></span>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12">
+                    <div class="search-wrapper text-center">
+                        <h2>search</h2>
+                        <div class="search-filtering pt-30">
+                            <div class="search_tab">
+                                <ul class="nav nav-tabs justify-content-center mb-55" id="myTab22" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="home-tab22" data-bs-toggle="tab" data-bs-target="#home2" type="button" role="tab">All categories</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="profile-tab22" data-bs-toggle="tab" data-bs-target="#profile3" type="button" role="tab" aria-selected="true">Basketball</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#contact3" type="button" role="tab" aria-selected="false">Handbag</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="sportswear-tabb" data-bs-toggle="tab" data-bs-target="#sportswear4" type="button" role="tab" aria-selected="false">Sportswear</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="contact3-tab" data-bs-toggle="tab" data-bs-target="#contact3" type="button" role="tab" aria-controls="contact2" aria-selected="false">Youth</button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent24">
+                                    <div class="tab-pane fade show active" id="home2" role="tabpanel">
+
+                                    </div>
+                                    <div class="tab-pane fade" id="profile3" role="tabpanel">
+
+                                    </div>
+                                    <div class="tab-pane fade" id="contact3" role="tabpanel">
+
+                                    </div>
+                                    <div class="tab-pane fade" id="sportswear4" role="tabpanel">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main_search">
+                            <form action="#">
+                                <input type="text" name="search" placeholder="search products">
+                                <button class="m-search"><i class="fal fa-search d-sm-none d-md-block"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- popup area start -->
+    <div class="overlay"></div>
+    <div class="product-popup">
+            <div class="view-background">
+                <div class="row">
+                    <div class="col-xl-5 col-lg-5 col-md-5">
+                        <div class="quickview">
+                            <div class="quickview__thumb">
+                                <img src="{% get_media_prefix %}img/quick_view/25-1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 col-lg-7 col-md-7">
+                        <div class="viewcontent">
+                            <div class="viewcontent__header">
+                                <a href="single-1.html"> <h2>Brown Leather Bags</h2></a>
+                                <a class="view_close product-p-close" href="javascript:void(0)"><i class="fal fa-times-circle"></i></a>
+                            </div>
+                        </div>
+                            <div class="viewcontent__rating">
+                                <i class="fal fa-star ratingcolor"></i>
+                                <i class="fal fa-star ratingcolor"></i>
+                                <i class="fal fa-star ratingcolor"></i>
+                                <i class="fal fa-star"></i>
+                            </div>
+                            <div class="viewcontent__price">
+                                <h4><span>$</span>99.00</h4>
+                            </div>
+                            <div class="viewcontent__stock">
+                                <h4>Available :<span> In stock</span></h4>
+                            </div>
+                            <div class="viewcontent__details">
+                                <p>Anlor sit amet, consectetur adipiscing elit. Fusce condimentum est lacus, non pretium risus lacinia vel. Fusce eget turpis orci.</p>
+                            </div>
+                            <div class="viewcontent__action">
+                                <span>Qty</span>
+                                <span><input type="number" placeholder="1"></span>
+                                <span><a href="#">add to cart</a></span>
+                                <span><i class="fal fa-heart"></i></span>
+                                <span><i class="fal fa-info-circle"></i></span>
+                            </div>
+                            <div class="viewcontent__footer">
+                                <ul>
+                                    <li>Category:</li>
+                                    <li>SKU:</li>
+                                    <li>Brand:</li>
+                                </ul>
+                                <ul>
+                                    <li>Watches</li>
+                                    <li>2584-MK63</li>
+                                    <li>Brenda</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+    </div>
+    <!-- product popup -->
+
+    <!-- popup area end -->
+
+
+        <!-- Bootstrap CDN -->
+
+    </div>
+    <style>
+    @font-face{
+        font-family:FigtreeVF;
+        src:url(chrome-extension://panammoooggmlehahpcjckcncfeffcoi/fonts/FigtreeVF.woff2) format("woff2 supports variations"),url(chrome-extension://panammoooggmlehahpcjckcncfeffcoi/fonts/FigtreeVF.woff2)
+        format("woff2-variations");
+        font-weight:100 1000;
+        font-display:swap
+    }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let tabs = document.querySelectorAll('.nav-link');
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function(event) {
+                    event.preventDefault();
+
+                    // Remove active classes from all tabs and tab content
+                    document.querySelectorAll('.nav-link, .tab-pane').forEach(el => {
+                        el.classList.remove('active', 'show');
+                    });
+
+                    // Activate clicked tab
+                    this.classList.add('active');
+
+                    // Get corresponding tab-pane ID
+                    let targetPane = document.querySelector(this.getAttribute('data-bs-target'));
+                    if (targetPane) {
+                        targetPane.classList.add('active', 'show');
+                    }
+                });
+            });
+        });
+    </script>
+
+
+{% endblock content %}
+
+
+

@@ -1,0 +1,24 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'styles/main.css' %}">
+<html lang="en">
+<body>
+    <div class="navbar-div">
+        <div class="navbar-div-left">
+            <img src="{% static 'images/Line 1.png' %}" class="navbar-one-line">
+            <p>Get up to 50% 0FF!</p>
+        </div>
+        <div class="navbar-div-right">
+            <div class="navbar-right-container">
+                <img src="{% static 'images/Phone.png' %}" class="navbar-one-icon">
+                <p>Contact us</p>
+            </div>
+            <div class="navbar-right-container">
+                <img src="{% static 'images/account_circle.png' %}" class="navbar-one-icon">
+                <p>My account</p>
+            </div>
+        </div>
+    </div>
+    {% block content %}
+    {% endblock content %}
+</body>
+</html>
